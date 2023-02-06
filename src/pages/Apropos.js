@@ -1,12 +1,15 @@
+import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-function App() {
+function Apropos() {
   return ( 
-  <div>
-    <Header />
-  </div>
+    <React.Fragment>
+      <Header />
+      <Footer />
+    </React.Fragment>
   )
 
 }
 
-export default App;
+export default Apropos;

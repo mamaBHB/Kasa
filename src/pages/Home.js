@@ -1,7 +1,14 @@
+import React from 'react';
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
-function App() {
-  return <Header />
+function Home() {
+  return (
+    <React.Fragment>
+      <Header />
+      <Footer />
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default Home;

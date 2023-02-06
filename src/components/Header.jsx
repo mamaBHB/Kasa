@@ -11,7 +11,7 @@ function Header() {
                 <img className="logo_header" src={logo} alt="logo"></img>
             </NavLink>
             <div className="nav_link">
-                <NavLink to="/">
+                <NavLink className="nav_link_accueil" to="/">
                     Accueil
                 </NavLink>
                 <NavLink to="/apropos">

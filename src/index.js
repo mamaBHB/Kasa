@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Apropos from './pages/Apropos';
 
+import './css/style.css'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

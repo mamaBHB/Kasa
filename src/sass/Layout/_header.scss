@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 0 100px;
+    
+    .nav_link{
+        a{
+            margin-left: 57px;
+            color: $primaire;
+            font-weight: 500;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
