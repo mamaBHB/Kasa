@@ -1,1 +1,12 @@
 $primaire: #FF6060;
+
+$espacements: (
+    bodyMargin: 0 2rem 0 2rem,
+);
+
+$breakpoints: (
+    mobile: 767px,
+    tablette: 768px,
+    tablette-max: 1023px,
+    desktop: 1024px
+);

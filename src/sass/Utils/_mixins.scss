@@ -1,3 +1,22 @@
 @mixin police {
     font-family: 'Montserrat', sans-serif;
 }
+
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media screen and (max-width: map-get($breakpoints, tablette-max)) and (min-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

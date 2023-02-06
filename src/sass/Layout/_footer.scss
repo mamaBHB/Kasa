@@ -5,5 +5,10 @@
 
     &_text{
         color: white;
+        font-size: 24px;
+
+        @include mobile(){
+            font-size: 12px;
+        }
     }
 }

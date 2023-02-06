@@ -8,13 +8,13 @@ function Header() {
     return (
         <div className="header">
             <NavLink to="/">
-                <img className="logo_header" src={logo} alt="logo"></img>
+                <img className="header_logo" src={logo} alt="logo"></img>
             </NavLink>
             <div className="nav_link">
-                <NavLink className="nav_link_accueil" to="/">
+                <NavLink className="nav_link_item" to="/">
                     Accueil
                 </NavLink>
-                <NavLink to="/apropos">
+                <NavLink className="nav_link_item" to="/apropos">
                     A propos
                 </NavLink>
             </div>
