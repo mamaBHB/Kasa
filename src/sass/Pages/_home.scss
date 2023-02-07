@@ -1,6 +1,8 @@
 .banner{
     background: rgba(0, 0, 0, 0.3) url(../assets/banner_home.png);
     background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center right;
     height: 14rem;
     border-radius: 25px;
