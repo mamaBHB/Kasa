@@ -10,7 +10,7 @@
 }
 
 @mixin tablette {
-    @media screen and (max-width: map-get($breakpoints, tablette-max)) and (min-width: map-get($breakpoints, tablette)) {
+    @media screen and (max-width: map-get($breakpoints, tablette_max)) and (min-width: map-get($breakpoints, tablette)) {
         @content;
     }
 }

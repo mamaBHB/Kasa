@@ -32,3 +32,60 @@
 
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    background-color: $secondaire;
+    margin: map-get($map: $espacements, $key: bodyMargin);
+    border-radius: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+
+    @include tablette(){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile(){
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        background-color: white;
+        padding: 0;
+    }
+
+    @include desktop() {
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.4s;
+        }
+    }
+
+    .card{
+        width: 100%;
+        background-color: $primaire;
+        border-radius: 10px;
+
+        img{
+            width: 100%;
+            height: 80%;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+            object-position: center;
+        }
+        p{
+            font-weight: 500;
+            font-size: 18px;
+            color: white;
+            margin-left: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        @include mobile(){
+            height: 260px;
+            p{
+                font-size: 18px;
+                margin: 2px 0 2px 15px;
+            }
+        }
+    }
+}
