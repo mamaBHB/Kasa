@@ -40,6 +40,7 @@
   background-color: black;
   text-align: center;
   padding: 66px 0 29px 0;
+  margin-top: 5rem;
 }
 .footer_text {
   color: white;
@@ -149,8 +150,8 @@ body a {
   font-weight: 500;
   font-size: 18px;
   color: white;
-  margin-left: 1rem;
-  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  margin-top: 0;
 }
 @media screen and (max-width: 767px) {
   .cards .card {
@@ -170,10 +171,15 @@ body a {
   height: 14rem;
   border-radius: 25px;
   margin: 0 2rem 0 2rem;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 767px) {
   .banner_apropos {
-    height: 7rem;
+    background: rgba(0, 0, 0, 0.3) url("../assets/banner_a_propos_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 223px;
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -187,7 +193,11 @@ body a {
   flex-direction: column;
   max-width: 1024px;
   width: 100%;
-  margin: 0.5em 0;
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .dropdown {
+    width: 90%;
+  }
 }
 .dropdown_header {
   display: flex;
@@ -199,8 +209,13 @@ body a {
   border-radius: 5px;
   padding: 0 1rem;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 24px;
   color: white;
+}
+@media screen and (max-width: 767px) {
+  .dropdown_header {
+    font-size: 13px;
+  }
 }
 .dropdown button {
   background: none;
@@ -224,7 +239,7 @@ body a {
   border-radius: 0 0 5px 5px;
   color: #ff6060;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 24px;
   padding: 1.5rem 0.5rem 0.5rem 1rem;
   overflow: hidden;
   display: block;
@@ -232,6 +247,11 @@ body a {
 }
 .content--hidden {
   display: none;
+}
+@media screen and (max-width: 767px) {
+  .content {
+    font-size: 12px;
+  }
 }
 
 .about {

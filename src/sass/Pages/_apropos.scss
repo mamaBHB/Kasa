@@ -6,9 +6,14 @@
     height: 14rem;
     border-radius: 25px;
     margin: map-get($map: $espacements, $key: bodyMargin);
+    margin-bottom: 1rem;
     
     @include mobile() {
-        height: 7rem;
+        background: rgba(0, 0, 0, 0.3) url("../assets/banner_a_propos_mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        height: 223px;
     }
     
     @include tablette(){
@@ -23,7 +28,10 @@
     flex-direction: column;
     max-width: 1024px;
     width: 100%;
-    margin: 0.5em 0;
+
+    @include tablette(){
+        width: 90%;
+    }
 
     &_header {
         display: flex;
@@ -35,8 +43,12 @@
         border-radius: 5px;
         padding: 0 1rem;
         font-weight: 500;
-        font-size: 1.5em;
+        font-size: 24px;
         color: white;
+
+        @include mobile(){
+            font-size: 13px;
+        }
     }
     button {
         background: none;
@@ -62,13 +74,17 @@
     border-radius: 0 0 5px 5px;
     color: #ff6060;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 24px;
     padding: 1.5rem 0.5rem 0.5rem 1rem;
     overflow: hidden;
     display: block;
     line-height: 1.5em;
     &--hidden {
         display: none;
+    }
+
+    @include mobile(){
+        font-size: 12px;
     }
 }
 
