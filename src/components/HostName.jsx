@@ -1,22 +1,15 @@
 function HostName({ host }) {
-    const hostNameSplitted = host.name.split(' ')
-    const [name, lastname] = hostNameSplitted
-  
+    const HostName = host.name.split(' ')
+    const [name, lastname] = HostName
     return (
-      <div className="accommodation_host_details">
-        <div className="accommodation_host_name">
+      <div className="host_details">
+        <div className="host_name">
           <p className="host_firstname">{name.trim()}</p>
           <p className="host_lastname">{lastname.trim()}</p>
         </div>
-        {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-        <img
-          src={host.picture}
-          // eslint-disable-next-line no-template-curly-in-string
-          alt="{`Photo de '${accommodation.host.name}`}"
-          className="accommodation_host_picture"
-        />
+        <img src={host.picture} alt={host.id} />
       </div>
     )
-  }
+}
   
   export default HostName

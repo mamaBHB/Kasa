@@ -28,8 +28,8 @@ function Logement() {
 
         <div className="logement_details_right">
           <div className="logement_hostCard">
-            <Rating rating={logement_Data.rating} />
             <HostName host={logement_Data.host} />
+            <Rating rating={logement_Data.rating} />
           </div>
         </div>
       </section>
