@@ -1,0 +1,18 @@
+.tags {
+    display: flex;
+    @include mobile (){
+        flex-wrap: wrap;
+    }
+}
+  
+.each_tag {
+    background-color: $primaire;
+    color: white;
+    border-radius: 10px;
+    padding: 0.3em 3em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    /* width: fit-content; */
+    text-align: center;
+    font-weight: 500;
+}

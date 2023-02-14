@@ -188,6 +188,18 @@ body a {
   }
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .about {
+    margin: 0 2rem 0 2rem;
+  }
+}
+
 .error {
   flex-direction: column;
   align-items: center;
@@ -251,17 +263,13 @@ body a {
 .left_arrow {
   position: absolute;
   left: 6px;
-  top: 50%;
-  color: white;
-  font-size: 42px;
+  top: 40%;
 }
 
 .right_arrow {
   position: absolute;
   right: 6px;
-  top: 50%;
-  color: white;
-  font-size: 42px;
+  top: 40%;
 }
 
 .slideshow_number {
@@ -345,16 +353,46 @@ body a {
   }
 }
 
-.about {
+.logement {
+  margin: 0 2rem 0 2rem;
+}
+.logement_title {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+.logement_location {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 1.12rem;
+}
+
+.about_logement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}
+
+.tags {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
 }
 @media screen and (max-width: 767px) {
-  .about {
-    margin: 0 2rem 0 2rem;
+  .tags {
+    flex-wrap: wrap;
   }
+}
+
+.each_tag {
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  padding: 0.3em 3em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  /* width: fit-content; */
+  text-align: center;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

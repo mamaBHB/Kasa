@@ -20,3 +20,14 @@
         height: 10rem;
     } 
 }
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @include mobile(){
+        margin: map-get($map: $espacements, $key: bodyMargin);
+    }
+}
