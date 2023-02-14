@@ -1,12 +1,22 @@
+import StarColored from "../assets/star_colored.png";
+import StarGrey from "../assets/star_grey.png";
+
 function Rating(rating) {
     let content = []
   
     for (let i = 0; i < 5; i++) {
       if (i < parseInt(rating.rating)) {
-        content.push(<i key={i} className="fa-solid fa-star fullStar"></i>)
+        content.push(<img
+          src={StarColored}
+          alt="Star"
+      />)
       } else {
         console.log(parseInt(rating.rating))
-        content.push(<i key={i} className="fa-solid fa-star emptyStar"></i>)
+        content.push(<img
+          src={StarGrey}
+          alt="Star"
+      />)
+        
       }
     }
   

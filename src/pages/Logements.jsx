@@ -12,39 +12,41 @@ function Accomodation() {
   const { id } = useParams(window.location.href)
   console.log("Voilà l'appartement numéro " + id)
 
-  const accommodation = Data.find((object) => object.id === id)
-  if (!accommodation) return <NotFound />
+  const logement_Data = Data.find((object) => object.id === id)
+  if (!logement_Data) return <NotFound />
 
   return (
     <main className="accommodation">
-      <Carrousel slideshow={accommodation.pictures} />
+      <Carrousel slideshow={logement_Data.pictures} />
       <section className="accommodation_top">
         <div className="accommodation_details_left">
-          <h1 className="accommodation_title">{accommodation.title}</h1>
-          <h2 className="accommodation_location">{accommodation.location}</h2>
+          <h1 className="accommodation_title">{logement_Data.title}</h1>
+          <h2 className="accommodation_location">{logement_Data.location}</h2>
           <div className="accommodation_tags">
-            <Tags tags={accommodation.tags} />
+            <Tags tags={logement_Data.tags} />
           </div>
         </div>
 
         <div className="accommodation_details_right">
           <div className="accommodation_hostCard">
-            <Rating rating={accommodation.rating} />
-            <HostName host={accommodation.host} />
+            <Rating rating={logement_Data.rating} />
+            <HostName host={logement_Data.host} />
           </div>
         </div>
       </section>
-      <section className="accommodation_collapse">
-        <Collapse
-          className="accommodation_collapse_description"
-          props={accommodation.description}
-          title="Description"
-        />
-        <Collapse
-          className="accommodation_collapse_equipments"
-          props={accommodation.equipments}
-          title="Équipements"
-        />
+      <section className="about">
+        <Collapse title="Description">
+          <span>
+            {logement_Data.description}
+          </span>
+        </Collapse>
+        <Collapse title="Équipements">
+          <ul>
+            <li className='collapse_logement'>
+              {logement_Data.equipments}
+            </li>
+          </ul>
+        </Collapse>
       </section>
     </main>
   )
