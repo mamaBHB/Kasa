@@ -193,6 +193,12 @@ body a {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  font-size: 24px;
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .about {
+    margin: 0 2rem 0 2rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .about {
@@ -259,6 +265,12 @@ body a {
   top: 0;
   height: 100%;
 }
+@media screen and (max-width: 767px) {
+  .slideshow_arrows img {
+    width: 11.67px;
+    height: 19.8px;
+  }
+}
 
 .left_arrow {
   position: absolute;
@@ -292,11 +304,6 @@ body a {
   flex-direction: column;
   max-width: 1024px;
   width: 100%;
-}
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-  .dropdown {
-    width: 90%;
-  }
 }
 .dropdown_header {
   display: flex;
@@ -405,6 +412,12 @@ body a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .about_logement {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 .tags {

@@ -21,6 +21,13 @@
     position: absolute;
     top: 0;
     height: 100%;
+
+    @include mobile(){
+      img{
+        width: 11.67px;
+        height: 19.8px;
+      }
+    }
   }
   
   .left_arrow {
