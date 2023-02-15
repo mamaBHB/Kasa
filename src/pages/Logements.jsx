@@ -18,7 +18,7 @@ function Logement() {
     <main className="logement">
       <Carrousel slideshow={logement_Data.pictures} />
       <section className="logement_top">
-        <div className="logement_details_left">
+        <div>
           <h1 className="logement_title">{logement_Data.title}</h1>
           <h2 className="logement_location">{logement_Data.location}</h2>
           <div className="logement_tags">
@@ -26,7 +26,7 @@ function Logement() {
           </div>
         </div>
 
-        <div className="logement_details_right">
+        <div>
           <div className="logement_hostCard">
             <HostName host={logement_Data.host} />
             <Rating rating={logement_Data.rating} />
@@ -40,7 +40,7 @@ function Logement() {
           </span>
         </Collapse>
         <Collapse title="Équipements">
-          <span className="about_logement_equipments">
+          <span>
             {logement_Data.equipments}
           </span>
         </Collapse>

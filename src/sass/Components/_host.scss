@@ -1,0 +1,36 @@
+.host_details{
+    display: flex;
+    gap: 2rem;
+    color: $primaire;
+
+    @include mobile(){
+        align-items: center;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 18px;
+
+        @include mobile(){
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+
+    img{
+        border-radius: 100%;
+
+        @include mobile(){
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+.host_rating{
+    img{
+        @include mobile(){
+            width: 15px;
+        }
+    }
+}
