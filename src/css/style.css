@@ -458,6 +458,9 @@ body a {
     gap: 2rem;
   }
 }
+.about_logement .equipList {
+  list-style-type: none;
+}
 
 .tags {
   display: flex;

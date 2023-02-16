@@ -11,7 +11,6 @@ function Rating(rating) {
           alt="Star"
       />)
       } else {
-        console.log(parseInt(rating.rating))
         content.push(<img
           src={StarGrey}
           alt="Star"

@@ -13,6 +13,12 @@ function Logement() {
 
   const logement_Data = Data.find((object) => object.id === id)
   if (!logement_Data) return <NotFound/>
+  const equipments = 
+    logement_Data.equipments.map((item,index)=>(
+      <li key={index} className="equipList">
+        {item}
+      </li>
+    ))
 
   return (
     <main className="logement">
@@ -40,9 +46,7 @@ function Logement() {
           </span>
         </Collapse>
         <Collapse title="Équipements">
-          <span>
-            {logement_Data.equipments}
-          </span>
+          {equipments}
         </Collapse>
       </section>
     </main>
