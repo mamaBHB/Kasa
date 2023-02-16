@@ -244,15 +244,25 @@ body a {
 .slideshow_content {
   margin: 1em 0;
   position: relative;
+  height: 415px;
+}
+@media screen and (max-width: 767px) {
+  .slideshow_content {
+    height: 255px;
+  }
 }
 
 .slideshow_picture {
-  /* background-color: #f96060; */
   width: 100%;
   height: 415px;
   mix-blend-mode: normal;
   border-radius: 25px;
   object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .slideshow_picture {
+    height: 255px;
+  }
 }
 
 .slideshow_arrows {
@@ -277,11 +287,21 @@ body a {
   left: 6px;
   top: 40%;
 }
+@media screen and (max-width: 767px) {
+  .left_arrow {
+    top: 50%;
+  }
+}
 
 .right_arrow {
   position: absolute;
   right: 6px;
   top: 40%;
+}
+@media screen and (max-width: 767px) {
+  .right_arrow {
+    top: 50%;
+  }
 }
 
 .slideshow_number {
@@ -294,11 +314,6 @@ body a {
   font-weight: 500;
 }
 
-@media screen and (min-width: 345px) and (max-width: 767px) {
-  .slideshow_picture {
-    height: 255px;
-  }
-}
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -392,15 +407,33 @@ body a {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .logement_top {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 767px) {
   .logement_top {
     flex-direction: column;
   }
 }
 
+.logement_hostCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .logement_hostCard {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .logement_hostCard {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -412,6 +445,12 @@ body a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .about_logement {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .about_logement {
