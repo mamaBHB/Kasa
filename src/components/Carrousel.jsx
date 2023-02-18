@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import leftArrow from "../assets/left_arrow.png";
 import rightArrow from "../assets/right_arrow.png";
 

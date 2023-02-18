@@ -1,5 +1,3 @@
-import React from "react";
-
 function Banner_apropos() {
     return (
         <div className="banner_apropos">
