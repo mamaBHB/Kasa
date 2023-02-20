@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from '../components/Banner'
-import Card from '../components/Card'
+import Banner from '../components/banner/Banner'
+import Card from '../components/card/Card'
 
 function Home() {
   return (

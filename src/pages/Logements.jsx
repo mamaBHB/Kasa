@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
 import Data from '../JSON/logements.json';
-import Collapse from '../components/Collapse';
+import Collapse from '../components/collapse/Collapse';
 import NotFound from './404';
-import Carrousel from '../components/Carrousel';
-import HostName from '../components/HostName';
-import Tags from '../components/Tags';
-import Rating from '../components/Rating';
+import Carrousel from '../components/carrousel/Carrousel';
+import HostName from '../components/host/HostName';
+import Tags from '../components/tags/Tags';
+import Rating from '../components/rating/Rating';
 
 function Logement() {
   const { id } = useParams(window.location.href)

@@ -1,5 +1,5 @@
-import StarColored from "../assets/star_colored.png";
-import StarGrey from "../assets/star_grey.png";
+import StarColored from "../../assets/star_colored.png";
+import StarGrey from "../../assets/star_grey.png";
 
 function Rating(ratings) {
     let content = []

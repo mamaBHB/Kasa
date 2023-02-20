@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import leftArrow from "../assets/left_arrow.png";
-import rightArrow from "../assets/right_arrow.png";
+import leftArrow from "../../assets/left_arrow.png";
+import rightArrow from "../../assets/right_arrow.png";
 
 function Carrousel({ slideshow }) {
   let [displayPicture, changePicture] = useState(0)

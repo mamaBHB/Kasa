@@ -1,5 +1,5 @@
 import { useState } from "react";
-import arrow_icon from "../assets/vector.png";
+import arrow_icon from "../../assets/vector.png";
 
 
 function Collapse(props) {

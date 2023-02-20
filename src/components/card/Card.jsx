@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Logement from "../JSON/logements.json"
+import Logement from "../../JSON/logements.json"
 
 function Card () {
     return (
